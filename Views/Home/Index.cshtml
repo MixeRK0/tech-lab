@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Анализ нового текста";
+}
+
+<div class="row">
+    <div class="col-6 text-center">
+        <button class="btn btn-info col-10">Анализ нового текста</button>
+    </div>
+    <div class="col-6 text-center">
+        <button class="btn btn-info pt-2 col-10">Выбрать уже готовый текст</button>
+    </div>
+</div>
+<div>
+    <h4 class="pt-3">
+        Анализ нового текста
+    </h4>
+
+    <textarea placeholder="Введите текст" class="col-12" style="height: 40vh"></textarea>
+
+    <div class="col-12" style="text-align: center !important;">
+        <form asp-action="Result" asp-controller="Home">
+            <button class="btn btn-success pt-2 col-4">Анализировать</button>
+        </form>
+    </div>
+
+    <div class="col-12 pt-2" style="text-align: center !important;">
+        <i>Анализ текста запущен, id текста: 155</i>
+    </div>
+</div>
