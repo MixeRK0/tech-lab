@@ -20,9 +20,9 @@ namespace NewWebApp.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Result([FromQuery]int userId, [FromQuery]string text)
+		public async Task<IActionResult> Result([FromQuery]int userId, string text)
 		{
-			var result = new Result() {UserId = 1, Data = "test"};
+			var result = new Result() {UserId = 1, Data = text};
 
 			_dbContext.Results.Add(result);
 			// _dbContext.Results.Add(new Result() { UserId = userId, Data = text });

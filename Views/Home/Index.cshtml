@@ -15,15 +15,11 @@
         Анализ нового текста
     </h4>
 
-    <textarea placeholder="Введите текст" class="col-12" style="height: 40vh"></textarea>
+    <form asp-action="Result" method="post">
+        <textarea placeholder="Введите текст" class="col-12" name="text" id="text" style="height: 40vh"></textarea>
 
-    <div class="col-12" style="text-align: center !important;">
-        <form asp-action="Result" asp-controller="Home">
-            <button class="btn btn-success pt-2 col-4">Анализировать</button>
-        </form>
-    </div>
-
-    <div class="col-12 pt-2" style="text-align: center !important;">
-        <i>Анализ текста запущен, id текста: 155</i>
-    </div>
+        <div class="col-12" style="text-align: center !important;">
+            <button type="submit" class="btn btn-success pt-2 col-4">Анализировать</button>
+        </div>
+    </form>
 </div>
