@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RDfMv03DqLx14Eyf70YS4aJwZPh4vx1UAiOMWpDqzu1kZgWNDc60RBJILpZYoES4ppUoksR6KXXkZLY4N+EUiQ==",
+  "dgSpecHash": "wSPA1jNCrRMHRqaxU7Ugu99l8ddjLBarPT0CYLd1AEswK7vaaXZOwIcclbYaqSWXsbVkiYBRWAZGxWn2SkbtIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\still\\source\\repos\\NewWebApp\\NewWebApp.csproj",
+  "projectFilePath": "/home/nikolay/WORK/tech-lab/NewWebApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
