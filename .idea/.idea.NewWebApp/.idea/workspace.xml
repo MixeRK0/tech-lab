@@ -23,23 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4d4db2f-e2e1-42d8-883a-81f42923f0d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Models/TextModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewWebApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewWebApp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewWebApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewWebApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/NewWebApp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/NewWebApp.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/NewWebApp.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/NewWebApp.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/NewWebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/NewWebApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/NewWebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/NewWebApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +39,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/92B5E598-6D6C-4D94-8B37-43C9DCEF6A74/D6/Tuple.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Analysis/TextAnalyser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/TextModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D66FA6A7-0570-4AEE-BC03-E61BF3A27460/C/Controller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,6 +63,8 @@
         <option value="$PROJECT_DIR$/Models/TextModel.cs" />
         <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
       </list>
     </option>
   </component>
@@ -167,26 +165,26 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="583" y="197" width="430" height="482" key="FileChooserDialogImpl" timestamp="1606867312592">
+    <state x="583" y="197" width="430" height="482" key="FileChooserDialogImpl" timestamp="1607466232205">
       <screen x="0" y="0" width="1600" height="876" />
     </state>
-    <state x="583" y="197" width="430" height="482" key="FileChooserDialogImpl/0.0.1600.876@0.0.1600.876" timestamp="1606867312592" />
-    <state width="1554" height="148" key="GridCell.Tab.0.bottom" timestamp="1607463876327">
+    <state x="583" y="197" width="430" height="482" key="FileChooserDialogImpl/0.0.1600.876@0.0.1600.876" timestamp="1607466232205" />
+    <state width="1554" height="261" key="GridCell.Tab.0.bottom" timestamp="1607472606954">
       <screen x="0" y="0" width="1600" height="876" />
     </state>
-    <state width="1554" height="148" key="GridCell.Tab.0.bottom/0.0.1600.876@0.0.1600.876" timestamp="1607463876327" />
-    <state width="1554" height="148" key="GridCell.Tab.0.center" timestamp="1607463876327">
+    <state width="1554" height="261" key="GridCell.Tab.0.bottom/0.0.1600.876@0.0.1600.876" timestamp="1607472606954" />
+    <state width="1554" height="261" key="GridCell.Tab.0.center" timestamp="1607472606952">
       <screen x="0" y="0" width="1600" height="876" />
     </state>
-    <state width="1554" height="148" key="GridCell.Tab.0.center/0.0.1600.876@0.0.1600.876" timestamp="1607463876327" />
-    <state width="1554" height="148" key="GridCell.Tab.0.left" timestamp="1607463876326">
+    <state width="1554" height="261" key="GridCell.Tab.0.center/0.0.1600.876@0.0.1600.876" timestamp="1607472606951" />
+    <state width="1554" height="261" key="GridCell.Tab.0.left" timestamp="1607472606948">
       <screen x="0" y="0" width="1600" height="876" />
     </state>
-    <state width="1554" height="148" key="GridCell.Tab.0.left/0.0.1600.876@0.0.1600.876" timestamp="1607463876326" />
-    <state width="1554" height="148" key="GridCell.Tab.0.right" timestamp="1607463876327">
+    <state width="1554" height="261" key="GridCell.Tab.0.left/0.0.1600.876@0.0.1600.876" timestamp="1607472606948" />
+    <state width="1554" height="261" key="GridCell.Tab.0.right" timestamp="1607472606952">
       <screen x="0" y="0" width="1600" height="876" />
     </state>
-    <state width="1554" height="148" key="GridCell.Tab.0.right/0.0.1600.876@0.0.1600.876" timestamp="1607463876327" />
+    <state width="1554" height="261" key="GridCell.Tab.0.right/0.0.1600.876@0.0.1600.876" timestamp="1607472606952" />
     <state x="153" y="73" width="1286" height="728" key="MergeDialog" timestamp="1607463462372">
       <screen x="0" y="0" width="1600" height="876" />
     </state>
