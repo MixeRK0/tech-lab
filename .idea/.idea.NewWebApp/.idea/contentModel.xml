@@ -5,6 +5,7 @@
     <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_NewWebApp.-966762725.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Analysis" t="Include">
+        <e p="SyntaxAnalyser.cs" t="Include" />
         <e p="TextAnalyser.cs" t="Include" />
         <e p="WordAnalyser.cs" t="Include" />
         <e p="WordType.cs" t="Include" />

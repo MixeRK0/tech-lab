@@ -23,11 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4d4db2f-e2e1-42d8-883a-81f42923f0d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Analysis/SyntaxAnalyser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewWebApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewWebApp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NewWebApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewWebApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/TextAnalyser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Analysis/TextAnalyser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/WordAnalyser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Analysis/WordAnalyser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis/WordType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Analysis/WordType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/NewWebApp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +43,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/92B5E598-6D6C-4D94-8B37-43C9DCEF6A74/D6/Tuple.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Analysis/TextAnalyser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/TextModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D66FA6A7-0570-4AEE-BC03-E61BF3A27460/C/Controller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,9 +64,9 @@
         <option value="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/Models/TextModel.cs" />
         <option value="$PROJECT_DIR$/Startup.cs" />
-        <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/appsettings.Development.json" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
       </list>
     </option>
   </component>
@@ -141,6 +143,9 @@
       <workItem from="1607460491508" duration="737000" />
       <workItem from="1607461448729" duration="346000" />
       <workItem from="1607461848811" duration="1319000" />
+      <workItem from="1608069739150" duration="352000" />
+      <workItem from="1608070553478" duration="704000" />
+      <workItem from="1608072807822" duration="372000" />
     </task>
     <servers />
   </component>

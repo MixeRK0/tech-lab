@@ -14,10 +14,16 @@ namespace NewWebApp.Analysis
 			"его","ого","ему","ому","их","ых","ую","юю","ая","яя","ою","ею" };
 
 		/// <summary>
-		/// Окончания и суффиксы причастий и деепричастий.
+		/// Окончания и суффиксы причастий.
 		/// </summary>
 		public static List<string> EndParticiples = new List<string>()
-			{ "ивш","ывш","ующ","ем","нн","вш","ющ","ущи","ющи","ящий","щих","щие","ляя" };
+			{ "ивш","ывш","ующ","ем","нн","вш","вший","ющ","ущи","ющи","ящий","щих","щие" };
+
+		/// <summary>
+		/// Окончания и суффиксы деепричастий.
+		/// </summary>
+		public static List<string> EndDeParticiples = new List<string>()
+			{ "ляя","вши","ши","уя","ая","уясь","аясь","яясь","вшись","ав","ев" };
 
 		/// <summary>
 		/// Окончания глаголов.
@@ -61,6 +67,7 @@ namespace NewWebApp.Analysis
 		{
 			new Tuple<WordType, List<string>>(WordType.Adjective, EndAdjectives),
 			new Tuple<WordType, List<string>>(WordType.Participle, EndParticiples),
+			new Tuple<WordType, List<string>>(WordType.De_Participle, EndDeParticiples),
 			new Tuple<WordType, List<string>>(WordType.Verb, EndVerbs),
 			new Tuple<WordType, List<string>>(WordType.Noun, EndNouns),
 			new Tuple<WordType, List<string>>(WordType.Adverb, EndAdverbs),
@@ -165,44 +172,66 @@ namespace NewWebApp.Analysis
 		}
 
 		/// <summary>
-		/// Сравнивает слово со списком часто распространённых местоимений.
+		/// Сравнивает слово со списком часто распространённых местоимений
+		/// и в случае совпадения возвращает его роль в предложении.
 		/// </summary>
 		/// <param name="word"></param>
 		/// <returns></returns>
-		public static bool IsPronoun(string word)
+		public static bool IsPronoun(string word, out WordType type)
 		{
 			switch (word)
 			{
+				// Список местоимений, выступающих подлежащими:
 				case "я":
+				case "ты":
+				case "он":
+				case "оно":
+				case "мы":
+				case "она":
+				case "вы":
+				case "они":
+				case "некто":
+				case "никто":
+				case "нечто":
+				case "ничто":
+					type = WordType.PronounSubject;
+					return true;
+
+				// Список местоимений, выступающих дополнениями:
 				case "мне":
 				case "меня":
 				case "мной":
 				case "мною":
-				case "ты":
 				case "тебе":
 				case "тебя":
 				case "тобой":
 				case "тобою":
-				case "он":
 				case "ему":
 				case "нему":
-				case "она":
 				case "ей":
 				case "ею":
 				case "ней":
-				case "оно":
-				case "мы":
 				case "нам":
 				case "нами":
 				case "нас":
-				case "вы":
 				case "вам":
 				case "вами":
 				case "вас":
-				case "они":
 				case "им":
 				case "ним":
 				case "себя":
+				case "кто":
+				case "что":
+				case "столько":
+				case "некому":
+				case "никому":
+				case "то":
+				case "это":
+				case "сам":
+				case "сколько":
+					type = WordType.PronounAddition;
+					return true;
+
 				case "мой":
 				case "моему":
 				case "моей":
@@ -220,37 +249,81 @@ namespace NewWebApp.Analysis
 				case "нашей":
 				case "нашим":
 				case "свой":
-				case "его":
-				case "её":
-				case "их":
-				case "то":
-				case "это":
 				case "тот":
 				case "такой":
 				case "такого":
 				case "таких":
 				case "таков":
-				case "столько":
-				case "весь":
 				case "любой":
 				case "всякий":
 				case "каждый":
-				case "сам":
 				case "другой":
 				case "самый":
 				case "иной":
-				case "кто":
-				case "что":
 				case "какой":
 				case "каков":
 				case "чей":
-				case "сколько":
-				case "некто":
-				case "нечто":
-				case "никто":
-				case "ничто":
-				case "некому":
-				case "никому":
+				case "весь":
+				case "его":
+				case "её":
+				case "их":
+				case "этот":
+				case "эта":
+				case "эти":
+				case "эту":
+				case "этой":
+				case "этим":
+				case "этих":
+					type = WordType.PronounDefinition;
+					return true;
+
+				default:
+					type = WordType.NotSet;
+					return false;
+			}
+		}
+
+		/// <summary>
+		/// Сравнивает слово со списком часто распространённых частиц.
+		/// </summary>
+		/// <param name="word"></param>
+		/// <returns></returns>
+		public static bool IsParticle(string word)
+		{
+			switch (word)
+			{
+				case "б":
+				case "бы":
+				case "да":
+				case "нет":
+				case "давай":
+				case "давайте":
+				case "пусть":
+				case "пускай":
+				case "ли":
+				case "разве":
+				case "неужели":
+				case "вон":
+				case "вот":
+				case "именно":
+				case "точно":
+				case "ровно":
+				case "подлинно":
+				case "же":
+				case "лишь":
+				case "уж":
+				case "ведь":
+				case "даже":
+				case "только":
+				case "едва":
+				case "вряд":
+				case "навряд":
+				case "всего":
+				case "ещё":
+				case "ишь":
+				case "всё":
+				case "всё-таки":
+				case "ну":
 					return true;
 
 				default:
@@ -269,20 +342,31 @@ namespace NewWebApp.Analysis
 			// Если это не чисто буквенная комбинация, проверка бессмысленна:
 			word = word.ToLower();
 			for (var i = 0; i < word.Length; i++)
-				if ((word[i] < 'а' || word[i] > 'я') && word[i] != '-')
+				if ((word[i] < 'а' || word[i] > 'я') && word[i] != 'ё' && word[i] != '-')
 					return WordType.Punctiation;
+
+			// В конце может через дефис добавляться частица "то" или "ка".
+			// Эту частицу, если она есть, мы уберём, чтобы не мешала.
+			if (word.Length > 3)
+			{
+				string temp = word.Substring(word.Length - 3);
+				if (temp == "-ка" || temp == "-то")
+					word = word.Substring(0, word.Length - 3);
+			}
 
 			// Сначала прогоним слово через "табличные" функции:
 			if (IsPreposition(word))
 				return WordType.Preposition;
 			if (IsConjuction(word))
 				return WordType.Conjunction;
-			if (IsPronoun(word))
-				return WordType.Pronoun;
+			if (IsPronoun(word, out WordType pronounType))
+				return pronounType;
+			if (IsParticle(word))
+				return WordType.Particle;
 			WordType result = WordType.NotSet;
 
 			// После этого будем сравнивать суффиксы и окончания:
-			int[] res = new int[7];
+			int[] res = new int[8];
 			int len_word = word.Length; // зафиксируем длину слова
 			foreach (var group in Groups)
 			{
@@ -304,7 +388,7 @@ namespace NewWebApp.Analysis
 					}
 
 					// Для (дее)причастия - проверка суффикса и окончания (от 40% и правее от длины слова):
-					else if (type == WordType.Participle
+					else if ((type == WordType.Participle || type == WordType.De_Participle)
 						&& word.IndexOf(part) >= Math.Round(0.4 * len_word))
 						res[index] = len_part;
 
@@ -325,7 +409,7 @@ namespace NewWebApp.Analysis
 
 			// Определяем "наиболее подходящую" часть речи:
 			int max = 0;
-			for (int i = 0; i < 7; i++)
+			for (int i = 0; i < 8; i++)
 				if (max < res[i])
 				{
 					max = res[i];

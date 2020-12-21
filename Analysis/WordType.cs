@@ -6,14 +6,20 @@
 	public enum WordType
 	{
 		Adjective, // прилагательное
-		Participle, // (дее)причастие
+		Participle, // причастие
+		De_Participle, // деепричастие
 		Verb, // глагол
 		Noun, // существительное
 		Adverb, // наречие
 		Numeral, // числительное
 		Conjunction, // союз
 		Preposition, // предлог
-		Pronoun, // местоимение
+
+		PronounSubject, // местоимение-подлежащее
+		PronounDefinition, // местоимение-определение
+		PronounAddition, // местоимение-дополнение
+
+		Particle, // частица
 
 		NotSet,
 		Punctiation
@@ -34,7 +40,10 @@
 					return "прилагательное";
 
 				case WordType.Participle:
-					return "(дее)причастие";
+					return "причастие";
+
+				case WordType.De_Participle:
+					return "деепричастие";
 
 				case WordType.Verb:
 					return "глагол";
@@ -54,8 +63,13 @@
 				case WordType.Preposition:
 					return "предлог";
 
-				case WordType.Pronoun:
+				case WordType.PronounAddition:
+				case WordType.PronounDefinition:
+				case WordType.PronounSubject:
 					return "местоимение";
+
+				case WordType.Particle:
+					return "частица";
 
 				case WordType.Punctiation:
 					return "пунктуация";
